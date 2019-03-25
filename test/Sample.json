@@ -1,0 +1,126 @@
+{
+    "name": "string",
+    "description": "string",
+    "imageUrl": "string",
+    "url": "string",
+    "youtubeurl": "string",
+    "id": "number",
+    "parentId": "number",
+    "isActive": "boolean",
+    "createdAt": "string",
+    "createdBy": "string",
+    "updatedAt": "string",
+    "updatedBy": "string",
+    "categoryHasProducts": {
+        "type": "array",
+        "keys": {
+            "name": "string",
+            "subtitle": "string",
+            "description": "string",
+            "imageUrl": "string",
+            "thumbUrl": "string",
+            "ingredients": "string",
+            "startDateTime": "string",
+            "endDateTime": "string",
+            "url": "string",
+            "id": "number",
+            "createdAt": "string",
+            "updatedAt": "string",
+            "productHasCategory": {
+                "type": "array",
+                "keys": {
+                    "name": "string",
+                    "description": "string",
+                    "imageUrl": "string",
+                    "url": "string",
+                    "youtubeurl": "string",
+                    "id": "number",
+                    "parentId": "number",
+                    "isActive": "boolean",
+                    "categories_has_products": {
+                        "type": "object",
+                        "keys": {
+                            "products_id": "number",
+                            "categories_id": "number"
+                        }
+                    }
+                }
+            },
+            "productHasAttributes": {
+                "type": "array",
+                "keys": {
+                    "id": "number",
+                    "name": "string",
+                    "description": "string",
+                    "dataType": "string",
+                    "defaultValue": "array",
+                    "products_has_attrributes": {
+                        "type": "object",
+                        "keys": {
+                            "value": "string",
+                            "products_id": "number",
+                            "attrributes_id": "number"
+                        }
+                    }
+                }
+            },
+            "productHasSizes": {
+                "type": "array",
+                "keys": {
+                    "id": "number",
+                    "imperial_size": "string",
+                    "metric_size": "string",
+                    "products_has_sizes": {
+                        "type": "object",
+                        "keys": {
+                            "barcode": "string",
+                            "imageUrl": "string",
+                            "thumbUrl": "string",
+                            "siliconImage": "string",
+                            "type": "string",
+                            "ecommerceId": "number",
+                            "productPrice": "number",
+                            "productUrl": "string",
+                            "recommended_size": "boolean",
+                            "products_id": "number",
+                            "sizes_id": "number"
+                        }
+                    }
+                }
+            },
+            "productHasIngredients": {
+                "type": "array",
+                "keys": {
+                    "id": "number",
+                    "name": "string",
+                    "description": "string",
+                    "products_has_ingredients": {
+                        "type": "object",
+                        "keys": {
+                            "products_id": "number",
+                            "ingredients_id": "number"
+                        }
+                    }
+                }
+            },
+            "productHasProfessionalApplication": {
+                "type": "array"
+            },
+            "topRecommendedProduct": {
+                "type": "array",
+                "keys": {
+                    "priority": "number",
+                    "product_id": "number",
+                    "id": "number",
+                    "products_id": "number",
+                    "products": "string",
+                    "isActive": "string",
+                    "createdAt": "string",
+                    "updatedAt": "string",
+                    "createdBy": "string",
+                    "updatedBy": "string"
+                }
+            }
+        }
+    }
+}

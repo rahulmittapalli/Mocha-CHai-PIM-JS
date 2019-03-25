@@ -1,0 +1,23 @@
+{
+  "name": "mochachai",
+  "version": "1.0.0",
+  "description": "Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test -R mochawesome||true",
+    "secondCommand": "mocha test -R mochawesome --reporter-options reportDir=Path,reportFilename=reports||true"
+  },
+  "dependencies": {
+    "chai-http": "^4.0.0"
+  },
+  "author": "Rahul",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0",
+    "mocha-simple-html-reporter": "^1.1.0",
+    "mocha-jenkins-reporter": "0.4.1",
+    "mochawesome": "^3.0.3",
+    "request": "^2.88.0"
+  }
+}

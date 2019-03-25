@@ -1,2 +1,3 @@
-# Mocha-CHai-PIM-JS
-Client submission Code
+# mochaChai
+Command to test the files
+"npm test"
