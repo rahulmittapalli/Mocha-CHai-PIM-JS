@@ -5,7 +5,7 @@ var env = require('./environment');
 var fun = require('./main');
 var subPath = "/open/categories";
 
-describe("Open Categories", function() {
+describe("Open Categories for ", function() {
   this.timeout(25000);
   it("Face Mapping Consumer", function(done) {
     var key = "ef75a003-8dff-4698-8e3a-445ef976b2f1";
